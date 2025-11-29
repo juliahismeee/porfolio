@@ -1351,3 +1351,80 @@ body {
         margin-top: 60px;
     }
 }
+/* Dark mode toggle button */
+.dark-mode-toggle {
+position: fixed;
+bottom: 20px;
+right: 20px;
+width: 44px;
+height: 44px;
+border-radius: 50%;
+border: none;
+background: var(--primary-color);
+color: #ffffff;
+box-shadow: var(--shadow-lg);
+cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: center;
+z-index: 1500;
+transition: var(--transition);
+}
+
+.dark-mode-toggle:hover {
+transform: translateY(-3px);
+box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Dark mode theme */
+body.dark-mode {
+background-color: #101018;
+color: #f5f5f7;
+}
+
+/* Example overrides for key elements */
+body.dark-mode .navbar {
+background: #161624;
+box-shadow: 0 2px 20px rgba(0, 0, 0, 0.6);
+border-bottom-color: #26263a;
+}
+
+body.dark-mode .page-section,
+body.dark-mode .hero,
+body.dark-mode .projects,
+body.dark-mode .skills,
+body.dark-mode .about,
+body.dark-mode .contact,
+body.dark-mode .journey-section,
+body.dark-mode .social-section {
+background: #101018;
+}
+
+body.dark-mode .section-title,
+body.dark-mode .hero-title,
+body.dark-mode .hero-subtitle {
+color: #ffffff;
+}
+
+body.dark-mode .project-card,
+body.dark-mode .skill-category,
+body.dark-mode .stat,
+body.dark-mode .interest-card,
+body.dark-mode .certification-card,
+body.dark-mode .contact-form,
+body.dark-mode .project-details {
+background: #161624;
+border-color: #26263a;
+box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode .contact-item p,
+body.dark-mode .project-card p,
+body.dark-mode .about-text p,
+body.dark-mode .section-description {
+color: #d0d0dd;
+}
+
+body.dark-mode .footer {
+background: #05050a;
+}

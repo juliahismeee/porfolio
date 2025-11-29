@@ -283,7 +283,7 @@ if (heroSubtitle) {
 // ===== DARK MODE TOGGLE (Optional Feature) =====
 // Uncomment the code below if you want to add a dark mode toggle
 
-/*
+
 const darkModeToggle = document.createElement('button');
 darkModeToggle.innerHTML = '<i class="fas fa-moon"></i>';
 darkModeToggle.classList.add('dark-mode-toggle');
@@ -298,7 +298,7 @@ darkModeToggle.addEventListener('click', () => {
 if (localStorage.getItem('darkMode') === 'true') {
     document.body.classList.add('dark-mode');
 }
-*/
+
 
 // ===== COUNTER ANIMATION =====
 function animateCounter(element, target, duration = 2000) {
