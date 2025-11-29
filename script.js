@@ -243,14 +243,21 @@ if (ctaButton && !ctaButton.hasAttribute('onclick')) {
     });
 }
 
-// ===== PROJECT LINKS =====
+// PROJECT LINKS
 const projectLinks = document.querySelectorAll('.project-link');
+
 projectLinks.forEach(link => {
     link.addEventListener('click', (e) => {
-        e.preventDefault();
-        alert('Project details would be displayed here. This is a demo portfolio!');
+        const href = link.getAttribute('href');
+        if (!href || href === '#') {
+            e.preventDefault();
+            alert('Project details would be displayed here. This is a demo portfolio!');
+        }
+        // If there is a real href, let it open normally.
     });
 });
+
+
 
 // ===== TYPING ANIMATION FOR HERO SUBTITLE =====
 const heroSubtitle = document.querySelector('.hero-subtitle');
