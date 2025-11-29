@@ -1352,6 +1352,7 @@ body {
     }
 }
 /* Dark mode toggle button */
+
 .dark-mode-toggle {
 position: fixed;
 bottom: 20px;
@@ -1376,13 +1377,13 @@ transform: translateY(-3px);
 box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
 }
 
-/* Dark mode theme */
+/* Dark mode theme 
 body.dark-mode {
 background-color: #101018;
-color: #f5f5f7;
+color: #ffffff;
 }
 
-/* Example overrides for key elements */
+/* Example overrides for key elements 
 body.dark-mode .navbar {
 background: #161624;
 box-shadow: 0 2px 20px rgba(0, 0, 0, 0.6);
@@ -1422,8 +1423,70 @@ body.dark-mode .contact-item p,
 body.dark-mode .project-card p,
 body.dark-mode .about-text p,
 body.dark-mode .section-description {
-color: #d0d0dd;
+color: #ffffff;
 }
+
+/* Dark mode: nav links white 
+body.dark-mode .nav-link {
+  color: #ffffff;
+}
+
+/* Dark mode: all paragraphs white 
+body.dark-mode p {
+  color: #ffffff;
+}
+
+body.dark-mode .interest-card p {
+  color: #ffffff;
+}
+
+body.dark-mode p,
+body.dark-mode .section-description,
+body.dark-mode .timeline-content p,
+body.dark-mode .interest-card p,
+body.dark-mode .social-section > p,
+body.dark-mode .social-card p,
+body.dark-mode .contact-info-desc,
+body.dark-mode .project-details p,
+body.dark-mode .about-text p,
+body.dark-mode .stat p,
+body.dark-mode .project-card h3,
+body.dark-mode .project-card h4,
+body.dark-mode .project-card p,
+body.dark-mode .project-details p,
+body.dark-mode .project-strong p,
+body.dark-mode .contact-subtitle,
+body.dark-mode .contact-item p,
+body.dark-mode .footer-section p,
+body.dark-mode .footer-section ul li a,
+body.dark-mode .footer-bottom {
+  color: #ffffff;
+}
+body.dark-mode p {
+  color: #ffffff;
+}
+
+
+/* Dark mode: grey text -> light purple 
+body.dark-mode p,
+body.dark-mode .section-description,
+body.dark-mode .timeline-content p,
+body.dark-mode .interest-card p,
+body.dark-mode .social-section > p,
+body.dark-mode .social-card p,
+body.dark-mode .contact-info-desc,
+body.dark-mode .project-details p,
+body.dark-mode .about-text p,
+body.dark-mode .stat p,
+body.dark-mode .project-card p,
+body.dark-mode .contact-subtitle,
+body.dark-mode .contact-item p,
+body.dark-mode .footer-section p,
+body.dark-mode .footer-section ul li a,
+body.dark-mode .footer-bottom {
+  color: #d4c5f9; /* light purple */
+}
+*/
 
 body.dark-mode .footer {
 background: #05050a;
